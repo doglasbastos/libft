@@ -6,16 +6,16 @@
 /*   By: dlb <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:43:20 by dlb               #+#    #+#             */
-/*   Updated: 2024/10/17 16:54:31 by dlb              ###   ########.fr       */
+/*   Updated: 2024/10/18 14:33:04 by dleite-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const unsigned char *ptr1 = (const unsigned char *)s1;
-	const unsigned char *ptr2 = (const unsigned char *)s2;
+	const unsigned char	*ptr1 = (const unsigned char *)s1;
+	const unsigned char	*ptr2 = (const unsigned char *)s2;
 
 	while (n--)
 	{
