@@ -6,7 +6,7 @@
 /*   By: dleite-b <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 11:56:57 by dleite-b          #+#    #+#             */
-/*   Updated: 2024/10/14 17:24:46 by dleite-b         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:28:32 by dlb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ void	*ft_memcpy(void *destination, const void *source, size_t size)
 	const unsigned char	*src;
 	size_t	i;
 
+	if (!destination && !source)
+	{
+		return NULL;
+	}
 	dest = (unsigned char *)destination;
 	src = (const unsigned char *)source;
 	i = 0;
